@@ -16,6 +16,7 @@ public class Ejecutor {
         Ingresar la información por teclado.
         */
         
-        
+	Hospital hospital = new Hospital("Loja", "Agustin", 20, 20);
+	System.out.println(hospital.toString());        
     }
 }

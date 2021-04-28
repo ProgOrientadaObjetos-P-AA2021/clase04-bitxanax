@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,7 +15,13 @@ public class Hospital {
     private String ciudad;
     private int numeroDoctores;
     private int numeroEnfermeros;
-    
+  
+    public Hospital(){
+	this.nombre = "Isidro Ayora";
+	this.ciudad = "Loja";
+	this.numeroDoctores = 100;
+	this.numeroEnfermeros = 200;
+    }  
     /*
         Crear un constructor que no tenga parámetros
         y que asigne valores ya establecidos a todos 
@@ -58,4 +65,7 @@ public class Hospital {
         return numeroEnfermeros;
     }
     
-}
+    @Override 
+    public String toString(){
+	    return "Nombre: " + this.nombre + "\nCiudad: "+ this.ciudad +"\nNúmero Doctores: "+this.numeroDoctores+"\nNúmero Enfermeros: "+this.numeroEnfermeros;   }
+   }

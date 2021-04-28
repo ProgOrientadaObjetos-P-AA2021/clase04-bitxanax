@@ -20,7 +20,14 @@ public class Hospital {
         valores que serán asignados a los atributos.
     
     */
-    
+
+    public Hospital(String nombre, String ciudad, int numDoctores, int numEnfermeros){
+        this.nombre =  nombre;
+        this.ciudad = ciudad;
+        this.numeroDoctores = numDoctores;
+        this.numeroEnfermeros = numEnfermeros;
+    }
+      
     public void establecerNombre(String n){
         nombre = n;
     }
